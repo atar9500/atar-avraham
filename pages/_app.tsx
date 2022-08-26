@@ -1,20 +1,18 @@
 import type { AppProps } from 'next/app';
-import { CssBaseline, ThemeProvider } from '@mui/material';
 
-import theme from '~/shared/theme';
+import { App } from './app';
 import '~/shared/i18n/init';
 
 export type PageProps = {
   children: React.ReactNode;
 };
 
-const RootPage = ({ Component, pageProps }: AppProps) => {
+const Page = ({ Component, pageProps }: AppProps) => {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
+    <App>
       <Component {...pageProps} />
-    </ThemeProvider>
+    </App>
   );
 };
 
-export default RootPage;
+export default Page;

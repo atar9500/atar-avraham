@@ -2,6 +2,7 @@ import type { AppProps } from 'next/app';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 
 import theme from '~/shared/theme';
+import '~/shared/i18n/init';
 
 export type PageProps = {
   children: React.ReactNode;

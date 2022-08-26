@@ -1,7 +1,13 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
-  return <div>Home</div>;
+  const { t } = useTranslation('common1');
+  return (
+    <div>
+      {t('cancel')} {t('approve')}
+    </div>
+  );
 };
 
 export default Home;

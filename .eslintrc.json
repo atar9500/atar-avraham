@@ -28,7 +28,7 @@
     "prettier/prettier": "error",
     "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
-    "@welldone-software/modules-engagement": "error",
+    "@welldone-software/modules-engagement": ["error"],
     "react/jsx-pascal-case": [1, { "allowLeadingUnderscore": true }],
     "react/jsx-key": [2, { "warnOnDuplicates": true }]
   }

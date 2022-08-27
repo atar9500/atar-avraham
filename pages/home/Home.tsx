@@ -1,12 +1,18 @@
+import { Box, Container } from '@mui/material';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 
 const Home = () => {
-  const { t } = useTranslation('common1');
   return (
-    <div>
-      {t('cancel')} {t('approve')}
-    </div>
+    <Container>
+      <Box sx={{ my: 2 }}>
+        {[...new Array(100)]
+          .map(
+            () =>
+              `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi non natus ex sapiente esse magni aliquam distinctio, eaque dolore deserunt, alias, animi quidem debitis nemo architecto saepe ducimus sit voluptas!`
+          )
+          .join('\n')}
+      </Box>
+    </Container>
   );
 };
 

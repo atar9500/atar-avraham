@@ -2,10 +2,10 @@ import { colors, PaletteOptions } from '@mui/material';
 
 const palette: PaletteOptions = {
   primary: {
-    main: '#FF2768',
+    main: '#145DA0',
   },
   secondary: {
-    main: '#145DA0',
+    main: '#FF2768',
   },
   text: {
     primary: colors.grey[100],

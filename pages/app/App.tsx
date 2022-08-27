@@ -3,17 +3,20 @@ import React from 'react';
 
 import theme from '~/shared/theme';
 
-type AppProviderProps = {
+import Header from './Header';
+
+type AppProps = {
   children: React.ReactNode;
 };
 
-const AppProvider = ({ children }: AppProviderProps) => {
+const App = ({ children }: AppProps) => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <Header />
       {children}
     </ThemeProvider>
   );
 };
 
-export default AppProvider;
+export default App;
